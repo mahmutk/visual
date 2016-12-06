@@ -12,6 +12,9 @@ namespace Training1
         {
             Dog Spot = new Dog();
             Spot.Color = "Brown";
+            Animal myAnimal = new Animal();
+            myAnimal.MakeNoise();
+            Spot.MakeNoise();
         }
     }
 }

@@ -21,5 +21,15 @@ namespace Training1
                 breed = value;
             }
         }
+
+        public void WagTail()
+        {
+            Console.WriteLine("Dog wags tail");
+        }
+
+        public override void MakeNoise()
+        {
+            Console.WriteLine("Bark");
+        }
     }
 }
