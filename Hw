@@ -1,1 +1,76 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace OdevBom
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //int n = 1;
+
+            //if(sayial() == n + 1)
+            //{
+            //    Console.WriteLine((n + 2) + "");
+            //}
+
+            for (int n = 1; n <= 10;n++)
+            {
+                if(n%2==0)
+                {
+                    int num = 0;
+                    string sayi = Console.ReadLine();
+                    if (sayi != "BOM")
+                    {
+                         num = Convert.ToInt32(sayi);
+                    }
+                    else
+                    {
+                         num = n;
+                    }
+
+                    if (n%3==0 && sayi !="BOM")
+                    {
+                        Console.WriteLine("Kaybettiniz...");
+                        Console.ReadLine();
+                        Environment.Exit(0);
+
+                    }
+
+                    if(num != n)
+                    {
+                        Console.WriteLine("Kaybettiniz...");
+                        Console.ReadLine();
+                        Environment.Exit(0);
+                    }
+                    
+
+                }else
+                {
+                    if(n%3 == 0)
+                    {
+                        Console.WriteLine("BOM");
+                    }
+                    else
+                    {
+                        Console.WriteLine(n);
+                    }
+
+                }
+
+            }
+
+            Console.WriteLine("Kazandınız.");
+            Console.ReadLine();
+        }
+
+       
+
+       
+
+
+    }
+}
